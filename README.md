@@ -13,6 +13,7 @@ Chat with your PDFs with LangChain, Python and LLM (OpenAI or HuggingFace) Updat
 2. Create the next variables:
 
 OPENAI_API_KEY=
+
 HUGGINGFACEHUB_API_TOKEN=
 
 3. Save it, you will modify this file in the nexts steps with the tokens
@@ -72,7 +73,7 @@ pip install -r requirements.txt
 ### .gitignore file
 
 1. Create a file with no name, just the extension .gitignore
-2. Put inside this archive the carpet from your virtual environment and your .env file, so this can be ignored and you don't upload it to github where everyone can see your tokens
+2. Put inside this archive the folder name from your virtual environment and your .env file, so this can be ignored and you don't upload it to github where everyone can see your tokens
 3. Add other folders and files that you don't want to share with the rest of the world
 
 Example:
@@ -104,4 +105,10 @@ __pycache__/
 6. Copy to clipboard the Token and paste after the "HUGGINGFACEHUB_API_TOKEN=" on your .env file
 
 
+<hr>
 
+## This project was created based on the YouTube tutorial from Alejandro AO - Software & Ai
+
+### [Chat with Multiple PDFs | LangChain App Tutorial in Python (Free LLMs and Embeddings)](https://www.youtube.com/watch?v=dXxQ0LR-3Hg)
+
+### Here is the main channel link [https://www.youtube.com/@alejandro_ao](https://www.youtube.com/@alejandro_ao)
