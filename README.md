@@ -105,6 +105,22 @@ __pycache__/
 6. Copy to clipboard the Token and paste after the "HUGGINGFACEHUB_API_TOKEN=" on your .env file
 
 
+## To Run the project
+
+1. Open a terminal in the main directory of the project
+
+```
+streamlit run app.py
+```
+
+2. this will open a navigator in the webpage, where you can chat with your PDF's
+3. On the left part of the webpage you can drag and drop PDF files into the section or browse the files
+4. Once you added them, you need to clic the button "Process"
+4.1. In the case of OpenAI and depending on the size of the PDF's, this will take some time, meanwhile the webpage will be processing and with a spinner animation
+4.2. In the case of HuggingFaceHub you will start first to downloading the model to your local machine, then processing the PDF's (this takes longer but no charge for use)
+5. When the page is ready, you can start to chat with youe PDF's, the answers start to appear on the bottom
+6. Happy Chatting!!
+
 <hr>
 
 ## This project was created based on the YouTube tutorial from Alejandro AO - Software & Ai

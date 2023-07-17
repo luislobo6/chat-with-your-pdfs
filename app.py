@@ -71,12 +71,14 @@ def handle_userinput(user_question):
 
 
 def main():
-    # load the environment variables (API KEYS)
+    # load the environment variables (API KEYS or TOKENS)
     load_dotenv()
     # config the page with title and icon
     st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
+    # Here you configure the CSS file, you need to allow unsafe HTML
     st.write(css, unsafe_allow_html=True)
 
+    # Here you check if the session variables exist, if not, you initialize them
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
     if "chat_history" not in st.session_state:
