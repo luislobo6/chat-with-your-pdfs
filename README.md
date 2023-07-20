@@ -58,7 +58,7 @@ Once you activated your environment at the very beggining of the prompt line you
 You will have to run the command "pip install" followed by the needed libraries to work on this project
 
 ```
-pip install streamlit pypdf2 langchain python-dotenv faiss-cpu openai huggingface_hub InstructorEmbedding sentence_transformers accelerate tiktoken
+pip install streamlit pypdf langchain python-dotenv faiss-cpu openai huggingface_hub InstructorEmbedding sentence_transformers accelerate tiktoken
 ```
 
 #### Installing the dependencies with the requirements.txt
