@@ -12,6 +12,10 @@ from langchain.llms import HuggingFaceHub
 
 
 def get_pdf_text(pdf_docs):
+    '''
+    this function receives a list of PDF's and extracts the texts
+    pdf_cocs: list
+    '''
     # start our variable where we're going to store the text
     text = ""
     # for each PDF in the list of PDF's
