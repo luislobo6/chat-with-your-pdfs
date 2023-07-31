@@ -14,7 +14,7 @@ from langchain.llms import HuggingFaceHub
 def get_pdf_text(pdf_docs):
     '''
     this function receives a list of PDF's and extracts the texts
-    pdf_cocs: list
+    pdf_docs: list
     '''
     # start our variable where we're going to store the text
     text = ""
@@ -30,6 +30,13 @@ def get_pdf_text(pdf_docs):
 
 
 def get_text_chunks(raw_text):
+    '''
+    this function receives text and then separates it into chunks
+    here it is considered a chunk size of 1000 and an overlap of
+    200, so if the chunk finish in the middle of a word it can 
+    overlap the chunk 200 characters before
+    raw_text: string
+    '''
     text_splitter = CharacterTextSplitter(
         separator="\n", chunk_size=1000, chunk_overlap=200, length_function=len
     )
